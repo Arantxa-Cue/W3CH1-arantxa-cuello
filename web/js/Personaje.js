@@ -9,18 +9,10 @@ export default class Personaje {
 
   serie = "Juego de Tronos";
 
-  emoji;
-
-  constructor(
-    nombrePersonaje,
-    emojiPersonaje,
-    familiaPersonaje,
-    edadPersonaje
-  ) {
+  constructor(nombrePersonaje, familiaPersonaje, edadPersonaje) {
     this.nombre = nombrePersonaje;
     this.familia = familiaPersonaje;
     this.edad = edadPersonaje;
-    this.emoji = emojiPersonaje;
   }
 
   comunicar() {

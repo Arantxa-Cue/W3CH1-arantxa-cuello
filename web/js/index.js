@@ -1,3 +1,5 @@
 import personajesGot from "./Personajes.js";
 
-console.log(personajesGot);
+const newEmoji = new Rey(card, "<i>\uD83D\uDC51</i>");
+
+console.log(newEmoji);

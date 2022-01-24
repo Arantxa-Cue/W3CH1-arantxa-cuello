@@ -5,16 +5,16 @@ export default class Rey extends Personaje {
 
   emoji;
 
-  constructor(emojiRey, nombreRey, familiaRey, edadRey, anyosReinadoRey) {
+  constructor(nombreRey, familiaRey, edadRey, anyosReinadoRey, emojiRey, card) {
     super(nombreRey, familiaRey, edadRey);
     this.anyosReinado = anyosReinadoRey;
+
     this.emoji = emojiRey;
+    this.emojiRey = document.createElement("i");
+    this.emojiRey.className = "emoji";
+    this.emojiRey.innerHTML = "<i>\uD83D\uDC51</i>";
 
-    this.emoji = document.createElement("i");
-    this.emoji.className = "emoji";
-    this.emoji.innerHTML = "<i></i>";
-
-    document.querySelector(".emoji").append(this.emoji);
+    card.append(this.emojiRey);
   }
 
   comunicar() {
