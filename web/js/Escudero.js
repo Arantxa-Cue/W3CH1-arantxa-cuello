@@ -1,5 +1,8 @@
-class Escudero extends Personaje {
+import Personaje from "./Personaje.js";
+
+export default class Escudero extends Personaje {
   sirveA;
+
   pelotismo;
 
   constructor(
@@ -19,11 +22,11 @@ class Escudero extends Personaje {
   filtrarPelotismo(gradoPelotismo) {
     if (gradoPelotismo < 0) {
       return 0;
-    } else if (gradoPelotismo > 10) {
-      return 10;
-    } else {
-      return gradoPelotismo;
     }
+    if (gradoPelotismo > 10) {
+      return 10;
+    }
+    return gradoPelotismo;
   }
 
   comunicar() {

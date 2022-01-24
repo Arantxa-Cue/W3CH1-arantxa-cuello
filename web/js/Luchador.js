@@ -1,5 +1,8 @@
-class Luchador extends Personaje {
+import Personaje from "./Personaje.js";
+
+export default class Luchador extends Personaje {
   arma;
+
   destreza;
 
   constructor(
@@ -17,11 +20,11 @@ class Luchador extends Personaje {
   filtraDestreza(valorDestreza) {
     if (valorDestreza < 0) {
       return 0;
-    } else if (valorDestreza > 10) {
-      return 10;
-    } else {
-      return valorDestreza;
     }
+    if (valorDestreza > 10) {
+      return 10;
+    }
+    return valorDestreza;
   }
 
   comunicar() {

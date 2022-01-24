@@ -1,4 +1,6 @@
-class Rey extends Personaje {
+import Personaje from "./Personaje.js";
+
+export default class Rey extends Personaje {
   anyosReinado;
 
   constructor(nombreRey, familiaRey, edadRey, anyosReinadoRey) {
@@ -13,6 +15,7 @@ class Rey extends Personaje {
 
 class ReyComponent {
   emoji;
+
   constructor() {
     this.emoji = document.createElement("i");
     this.emoji.className = "emoji";

@@ -1,5 +1,8 @@
-class Asesor extends Personaje {
+import Personaje from "./Personaje.js";
+
+export default class Asesor extends Personaje {
   asesorado;
+
   constructor(nombreAsesor, familiaAsesor, edadAsesor, personajeAsesorado) {
     super(nombreAsesor, familiaAsesor, edadAsesor);
     if (personajeAsesorado instanceof Personaje) {
