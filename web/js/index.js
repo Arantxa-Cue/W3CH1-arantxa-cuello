@@ -11,6 +11,6 @@ const cardTest = document.querySelector(".character");
 const action = () => {
   console.log("hello");
 };
-const prueba = new ImageComponent(body, "", "señor");
+const image = new ImageComponent(body, "", "señor");
 const button = new ButtonComponent(body, "algo", action());
 const cardTemplate = new CardComponent(cardTest, "div");
