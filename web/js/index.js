@@ -12,7 +12,15 @@ const cardTest = document.querySelector(".character");
 const action = () => {
   console.log("hello");
 };
-const liComponent = new LiComponent(li);
-const cardTemplate = new CardComponent(cardTest, "div");
 const button = new ButtonComponent(body, "algo", action());
-const image = new ImageComponent(body, "", "señor");
+
+personajesGot.forEach((element) => {
+  const list = document.createElement("li");
+  list.classList.add("character", "col");
+
+  li.appendChild(list);
+
+  const image = new ImageComponent("img/bronn.jpg", "profile picture");
+
+  const cardTemplate = new CardComponent(list, "div", image);
+});
