@@ -1,7 +1,12 @@
-import Component from "./Component";
+import Component from "./Component.js";
 
 export default class ImageComponent extends Component {
-  constructor(parentElement, imagePath, htmlTag, altText, className) {
+  constructor(
+    parentElement,
+    imagePath,
+    altText,
+    className = "character__picture card-img-top"
+  ) {
     super(parentElement, "img");
     this.element.src = imagePath;
     this.element.alt = altText;
