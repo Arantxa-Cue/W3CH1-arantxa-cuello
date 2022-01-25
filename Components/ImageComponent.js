@@ -2,10 +2,10 @@ import Component from "./Component.js";
 
 export default class ImageComponent extends Component {
   constructor(
-    parentElement,
     imagePath,
     altText,
-    className = "character__picture card-img-top"
+    className = "character__picture card-img-top",
+    parentElement = document.querySelector(".card")
   ) {
     super(parentElement, "img");
     this.element.src = imagePath;
